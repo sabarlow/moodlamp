@@ -45,6 +45,8 @@ void loop() {
 
     // create code here to change the LEDs based on the volume of sound
 
+    
+
     // Use a sine wave to cycle nicely through all of the colours
     redBrightness   = (255 * (sin(x)        + 1) / 2) * lastLowPass;     // calculate the brightness for red led
     greenBrightness = (255 * (sin(x + 60)   + 1) / 2) * lastLowPass;     // calculate the brightness for green led
