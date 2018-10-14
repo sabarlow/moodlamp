@@ -2,13 +2,6 @@
 //
 // Updated 11/10/18
 // Author: Shaun Barlow
-// ---------------------------------------------------
-// The brightness of the leds follows these equations:
-// Red = sin(x)
-// Green = sin(x + 60)
-// Blue = sin(x + 120)
-// for x from 0 to 180 degrees
-// ---------------------------------------------------
 
 float colourSpeed = 0.00005;
 
@@ -31,7 +24,7 @@ int lastMicLevel = 0; // we'll store the previously read mic level here
 // smoothWeight is used in the filter for smoothing out the music response
 float smoothWeight = 0.02; 
 
-float lastLowPass = 0; // also used in the filter
+float lastLowPass = 1; // also used in the filter
 
 void setup() {
   pinMode(redLed1, OUTPUT);    // tell arduino it's an output
